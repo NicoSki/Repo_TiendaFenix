@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Bootstrap</title>
+</head>
+<body>
+    
+<!--Comienzo por el header-->
+ 
+<header>
+    <div>
+           <img class="ave" src="imagenes/nueva ave.png"> 
+           <h1>TIENDA FENIX</h1>
+     </div>
+</header>
+
+<!--Paso al menú de seleccion, a la cual se le agrega un buscador, no lo pude hacer antes ya que no tenia las herramientas para hacerlo-->
+<main>
+
+<nav>
+        <span class="menu">
+               <ul>
+                   <li class="a1"><a href="#">PRODUCTOS</a></li>
+                   <li class="a1"><a href="#">SEDES</a></li>
+                   <li class="a1"><a href="#">NOVEDADES</a></li>
+                   <li class="a1"><a href="#">CONTACTO</a></li>
+                   
+                   <nav class="navbar navbar-light bg-light">
+                       <div class="container-fluid">
+                           <form class="d-flex">
+                               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                               <button class="btn btn-outline-success" type="submit">🔍</button>
+                            </form>
+                        </div>
+                   </nav>                   
+               </ul>
+        </span>
+</nav>
+
+<!--Luego sigo por el slidershow y la descripcion del costado-->
+    
+<div class="container-fluid">
+       <div class="row">
+              <div class="col-8">
+                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="imagenes/campera.jpg" class="d-block w-100" style="height: 500px;">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imagenes/pantalon.jpg" class="d-block w-100" style="height: 500px;">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imagenes/short.jpg" class="d-block w-100" style="height: 500px;">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imagenes/remera.jpg" class="d-block w-100" style="height: 500px;">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="imagenes/zapatillas.jpg" class="d-block w-100" style="height: 500px;">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                      </div>
+              </div>
+
+
+              <div class="col-4">
+                <p>
+                    ¿Porque comprar por ´Tienda Fenix´? Tienda Fenix es un area pensada para el consumidor con el fin de no solo facilitarle la busqueda de un producto deseado, sino que ofrecer una gran gama de variedades para lucir de la mejor manera. No obstante eso, en Fenix nos encargamos que tanto la busqueda del producto como la forma de adquirirlo sea la mas rapida y sencilla posible.
+                </p>
+              </div>
+       </div>
+</div>
+
+<!--Agrego el contenido restante del main-->
+
+<div class="container">
+      <div class="row">
+                    <div class="col-6">
+                         <p>
+                            Bienvenidos a la tienda Fenix, donde vas a poder encotrar cualquier tipo de indumentaria de la forma mas facil y dinamica, contando con tus marcas preferidas y con unos descuentos que no vas a poder rechazar
+                         </p>
+                    </div>
+                      
+                    <div class="col-6">
+                        <div id="comentarios">
+                            Sacate una duda que tengas, que estas esperando?    
+                        <textarea name="" class="agregar" cols="30" rows="10" placeholder="Agregar un comentario"></textarea>
+                        <input type="button" name="" id="" value="Enviar">
+                        </div>
+                    </div>
+      </div>
+</div>
+
+<!--Slideshow de marcas y video-->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-6" style="height: 300px;">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imagenes/nike.jpg" class="d-block w-100" style="height: 300px;">
+                    <div class="carousel-caption d-none d-md-block">                       
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/adidas.jpg" class="d-block w-100" style="height: 300px;">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/puma.jpg" class="d-block w-100" style="height: 300px;">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/under.png" class="d-block w-100" style="height: 300px;">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+
+        <div class="col-6">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/NljGurzPM2g" title="YouTube video player" frameborder="0" autoplay controls loop muted></iframe>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+      <div class="row">
+               <div class="col-7" style="margin-top: 35px; color: orangered;">
+                  DEJANOS TUS DATOS
+                     
+                  <div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" style="margin-top: 10px;">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" style="margin-top: 10px;">
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">E-mail</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ejemplo@gmail.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="+54">
+                  </div>
+                  <div style="text-align: center;">
+                    <input type="radio" name="sexodelusuario" id=""> HOMBRE
+                    <input type="radio" name="sexodelusuario" id=""> MUJER
+                </div>
+                <select class="lugar" style="width: 100%;">
+                    <option value="">BUENO AIRES</option>
+                    <option value="">CABA</option>
+                    <option value="">CORDOBA</option>
+                    <option value="">SANTA FE</option>
+                    <option value="">SAN JUAN</option>
+                    <option value="">TUCUMAN</option>
+                    <option value="">JUJUY</option>
+                </select>
+                <br>
+                <div style="text-align: center;margin-top: 10px;">
+                <input class="vaciar" type="submit" name="" id="" value="Enviar">
+                <input class="vaciar" type="reset" name="" id="" value="Vaciar formulario">
+                </div>
+               </div>
+
+
+               <div class="col-5">
+                 <div style="width: 100%;height: 100%;">    
+                    <img src="imagenes/just do it.webp">
+                 </div>
+               </div>
+      </div>
+</div>
+
+<!--luego paso al footer-->
+
+<footer>
+<div class="container-fluid-2">
+     <div class="row">
+             <div class="col-6">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: orangered;">
+                          Sobre nosotros
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" style="color: orangered;">
+                            Fenix es una tienda online con el proposito de que el consumidor se sienta seguro de comprar por via electronica sin el riesgo de ser estafado o que se encuentre frente a una mala experiencia, Feniz crece dia a dia y cuenta con mas de 100 productos diferentes para todo tipo de actividades y de estaciones del año
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color: orangered;">
+                          Politica de Privacidad
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" style="color: orangered;">
+                            Esta política de privacidad describe los datos personales recopilados o generados cuando usted utiliza las páginas web de Fenix y las aplicaciones móviles de Fenix (nuestras «Apps»). Esta Política describe los tipos de datos personales recopilados cuando usted utiliza nuestras Páginas Web y Apps y cómo se utilizan, comparten y protegen sus datos personales. También explica las opciones que tiene en relación con sus datos personales y cómo puede ponerse en contacto con nosotros
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color: orangered;">
+                          Terminos y condiciones
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" style="color: orangered;">
+                            REGLAS BÁSICAS: Usted solo podrá usar la Plataforma si es mayor de edad en su país o si tiene el consentimiento de su padre/madre o tutor. Es posible que existan ciertas restricciones de edad para los servicios específicos de la Plataforma en varios países. Cuando se registra para una cuenta con nosotros, se aplican las siguientes reglas: Sea sincero: Proporcione información de registro precisa y actual. Sea usted mismo: Mantenga su registro personal. No se registre en más de una cuenta de Fenix, no registre una cuenta de Fenix en nombre de otra persona ni transfiera su cuenta. Protéjase: Mantenga a salvo su nombre de usuario, contraseña y otras credenciales de inicio de sesión y no permita que nadie más utilice su cuenta. Sea responsable: Informe a Fenix inmediatamente sobre cualquier uso no autorizado de su cuenta de Fenix. Usted es responsable de cualquier cosa que pase a través de su cuenta de Fenix, con o sin su permiso. EN LA MÁXIMA MEDIDA PERMITIDA POR LA LEY APLICABLE, Fenix NO ES RESPONSABLE DE NINGUNA PÉRDIDA O ACTIVIDAD QUE SURJA DEL USO NO AUTORIZADO DE SU CUENTA.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+             </div>
+
+
+             <div class="col-6">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour" style="color: orangered;">
+                          Medios de pago
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" style="color: orangered;">
+                            Fenix ofrece 3 sencillos metodos de pago: Mercado pago, Tranferencia o Pago con tarjetas varias (debito y credito)
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="color: orangered;">
+                          Envios
+                        </button>
+                      </h2>
+                      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" style="color: orangered;">
+                            Los envios de Fenix estan vinculados con los servicios de Mercado libre y Andreani. El plazo maximo de entrega una vez abonado el producto es de una semana (7 dias habiles)
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix" style="color: orangered;">
+                          Devoluciones
+                        </button>
+                      </h2>
+                      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" style="color: orangered;">
+                            Fenix se va a ser cargo de las devoluciones siempre y cuando el producto conserve su caja o envoltorio y se adjunte el comprobante de la compra. Las devoluciones tienen una demora de entre 7 y 10 dias habiles
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+             </div>
+     </div>
+</div>
+</footer>
+</main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

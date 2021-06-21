@@ -1,0 +1,98 @@
+/*Le doy los estilos establecidos al header, no se agrego boostrap ya qie no requeria su uso*/
+
+header h1{
+    text-align: center;
+    text-shadow: 2px 2px 2px red;
+    margin-top: 100px;
+    margin-right: 50px;
+    margin-left: 250px;
+    margin-bottom: 100px;
+    font-size: 40px;
+    font-family:Arial, Helvetica, sans-serif; 
+    border-left: 10px; 
+    border:solid red;      
+  }
+
+.ave{
+height: 200px;
+width: 200px;
+float: left;
+margin-right: -100px;
+margin-top: -90px;
+padding-left: 10px;
+}
+
+/*algunas modificaciones al menu principal*/
+.menu li{
+    list-style-type: none;
+    margin-top: 20px;
+   }
+
+.menu li a{
+text-decoration: none;
+font-size: 15px;
+color: orangered;
+font-weight: bold;
+padding: 20px;
+     }
+
+nav span.menu ul{
+    display: flex;
+    justify-content: space-around;
+}     
+
+.menu li.a1 a:hover{
+    background: orangered;
+    color: black;
+    border: 2px black dotted;
+               }
+
+.menu ul nav div form button:hover{
+    background: orangered;
+}               
+
+/* slidershow y descripcion lateral*/
+
+div div div.col-8, div.col-4{
+    height: 500px;
+}
+
+div.col-4{
+    font-size: 25px;
+    line-height: 45px;
+    color: orangered;
+}
+
+/*Restos de los estilos del main*/
+
+div div div.col-6{
+    margin-top: 50px;
+    height: 300px;
+}
+
+/*Bienvenida*/
+div div div.col-6 p{
+    font-family: cursive;
+    color: orangered;
+    font-size: 30px;
+    line-height: 50px;
+        }
+
+/*Comentarios*/        
+
+div div div.col-6 div#comentarios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: orangered;
+}
+
+/*por ultimo cambio de color el fondo*/
+body{
+    background: black;
+}
+
+
+
+     
+
